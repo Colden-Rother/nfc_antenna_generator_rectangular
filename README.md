@@ -2,7 +2,7 @@
 Generate an NFC antenna module for kicad.
 
 ## Howto
-Call `python3 antGen.py -h` from your terminal to see how to use the script or overwrite the constants in antGen.py and then call the script without any arguments `python3 antGen.py`. The generated module will be written to `./nfc_ant.pretty/`.
+Call `py antGen.py -h` from your terminal to see how to use the script or overwrite the constants in antGen.py and then call the script without any arguments `py antGen.py`. The generated module will be written to `./nfc_ant.pretty/`.
 
 ### Terms / dimensions
 The used terms / dimensions are shown here (note: minimalConductorSpace is only needed when style 2 is chosen):
@@ -12,7 +12,7 @@ The used terms / dimensions are shown here (note: minimalConductorSpace is only 
 The whole project is inspired by the eDesign Antenna tool from ST. Go to https://my.st.com/analogsimulator/html_app/antenna/#/ to design your antenna and use these values to generate an corresponding antenna module for kicad with antGen.py.
 
 ## Tested
-I only tested it on my machine with Python 3.7.3 and kicad Version: 5.0.2+dfsg1-1, release build, Platform: Linux 4.19.0-6-amd64 x86_64 
+I only tested it on my machine with Python 3.13.5 and kicad Version: 9+, release build, Platform: Windows 
 
 ### DRC error
 There will be a "Pad near pad" Error when you do the DRC in pcbnew. This occures from the fact, that you have to connect two pads together (shorten) when you design a current antenna.
