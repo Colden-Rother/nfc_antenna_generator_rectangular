@@ -1,18 +1,19 @@
-#!/bin/env python3
+
 #
 # ---------------------------------------------------------------------------
 #    N F C   A N T E N N A   G E N E R A T O R
 # ---------------------------------------------------------------------------
 #
+# 2025-12-05 updated by Colden Rother
 # 2019-11-15 by mui
-#
-# usage: ./antGen.py -h
+
+
 #
 # output will be written to ./nfc_ant.pretty/
 #
 # to calculate antenna inductance, check https://my.st.com/analogsimulator/html_app/antenna/#/
 #
-# tested with Python 3.7.3 and kicad Version: 5.0.2+dfsg1-1, release build, Platform: Linux 4.19.0-6-amd64 x86_64
+# tested with Python 3.13.5 and kicad Version: 9+dfsg1-1, release build, Platform: Windows
 #
 # WARNING: There will be a "Pad near pad" Error when you do the DRC in pcbnew. 
 #          This occures from the fact, that you have to connect two pads together (shorten) when you design a current antenna.
